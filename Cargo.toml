@@ -1,0 +1,29 @@
+[package]
+name = "stale"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI tool to run or skip commands based on file content hashes"
+license = "Apache-2.0"
+repository = "https://github.com/th1nkful/stale"
+
+[[bin]]
+name = "stale"
+path = "src/main.rs"
+
+[[bin]]
+name = "test_helper"
+path = "src/bin/test_helper.rs"
+
+[lib]
+name = "stale"
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+glob = "0.3"
+hex = "0.4"
+sha2 = "0.10"
+
+[dev-dependencies]
+tempfile = "3.10"
