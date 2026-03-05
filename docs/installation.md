@@ -31,7 +31,7 @@ STALE_VERSION=0.2.0 INSTALL_DIR=~/.local/bin curl -fsSL https://raw.githubuserco
 ## Homebrew (macOS/Linux)
 
 ```bash
-brew install Survesy/stale/stale
+brew install survesy/stale/stale
 ```
 
 ## From source
