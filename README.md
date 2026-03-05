@@ -16,21 +16,21 @@ When no command is supplied `stale` exits `0` if files are unchanged and `1` if 
 ### Shell installer (Ubuntu / Linux / macOS)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | sh
 ```
 
 Install a specific version or to a custom directory:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | STALE_VERSION=0.2.0 sh
-curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | INSTALL_DIR=/usr/local/bin sh
+curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | STALE_VERSION=0.2.0 sh
+curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | INSTALL_DIR=/usr/local/bin sh
 ```
 
 ### Homebrew (macOS/Linux)
 
 ```bash
-brew tap th1nkful/stale https://github.com/th1nkful/stale.git
-brew install th1nkful/stale/stale
+brew tap Survesy/stale https://github.com/Survesy/stale.git
+brew install Survesy/stale/stale
 ```
 
 ### From source

@@ -13,7 +13,7 @@ it in `/usr/local/bin` (or a directory of your choice). This is the recommended
 approach for CI/CD pipelines.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | sh
 ```
 
 ### Options
@@ -25,13 +25,13 @@ curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | sh
 
 ```bash
 # Install a specific version to a custom directory
-STALE_VERSION=0.2.0 INSTALL_DIR=~/.local/bin curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | sh
+STALE_VERSION=0.2.0 INSTALL_DIR=~/.local/bin curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | sh
 ```
 
 ## Homebrew (macOS/Linux)
 
 ```bash
-brew install th1nkful/stale/stale
+brew install Survesy/stale/stale
 ```
 
 ## From source
@@ -42,7 +42,7 @@ cargo install --path .
 
 ## From GitHub releases
 
-Pre-built binaries are available for the following platforms on the [GitHub Releases](https://github.com/th1nkful/stale/releases) page:
+Pre-built binaries are available for the following platforms on the [GitHub Releases](https://github.com/Survesy/stale/releases) page:
 
 - `x86_64-unknown-linux-gnu`
 - `aarch64-unknown-linux-gnu`

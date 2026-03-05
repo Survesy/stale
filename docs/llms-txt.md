@@ -24,7 +24,7 @@ Two files are regenerated on every push to `main` and served as part of this sit
 
 **Version:** x.y.z
 **License:** Apache-2.0
-**Repository:** https://github.com/th1nkful/stale
+**Repository:** https://github.com/Survesy/stale
 **Dependencies:** (example subset)
 - dependency-a (1.0)
 - dependency-b (2.0)

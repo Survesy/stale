@@ -24,7 +24,7 @@ When no command is supplied `stale` exits `0` if files are unchanged and `1` if 
 
 ```bash
 # Install via Homebrew
-brew install th1nkful/stale/stale
+brew install Survesy/stale/stale
 
 # Re-run cargo test only when .rs source files change
 stale 'src/**/*.rs' -- cargo test
