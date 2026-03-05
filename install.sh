@@ -2,7 +2,7 @@
 # Install script for stale — downloads a pre-built binary from GitHub Releases.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/th1nkful/stale/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/Survesy/stale/main/install.sh | sh
 #
 # Environment variables:
 #   STALE_VERSION   — version to install (default: latest)
@@ -10,7 +10,7 @@
 
 set -eu
 
-REPO="th1nkful/stale"
+REPO="Survesy/stale"
 INSTALL_DIR="${INSTALL_DIR:-${HOME:-$PWD}/.local/bin}"
 
 # Detect architecture

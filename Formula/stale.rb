@@ -1,6 +1,6 @@
 class Stale < Formula
   desc "CLI tool to run or skip commands based on file content hashes"
-  homepage "https://github.com/th1nkful/stale"
+  homepage "https://github.com/Survesy/stale"
   version "0.2.2"
   license "Apache-2.0"
 
