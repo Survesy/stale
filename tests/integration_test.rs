@@ -1002,4 +1002,12 @@ fn help_command_prints_help_and_exits_0() {
         stdout.contains("Usage"),
         "stale help should print usage information"
     );
+    assert!(
+        stdout.contains("EXAMPLES:"),
+        "stale help should include an EXAMPLES section"
+    );
+    assert!(
+        stdout.contains("cargo test"),
+        "stale help examples should mention cargo test"
+    );
 }

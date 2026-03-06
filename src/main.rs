@@ -7,31 +7,30 @@ use stale::{
 use std::path::{Path, PathBuf};
 use std::process;
 
-/// stale — run or skip a command based on whether watched files have changed.
-///
-/// EXAMPLES:
-///
-///   # Re-run cargo test only when .rs files change
-///   stale 'src/**/*.rs' -- cargo test
-///
-///   # Rebuild Docker image only when relevant files change
-///   stale Dockerfile 'src/**' -- docker build -t myapp .
-///
-///   # Use a named entry to track two separate sets of inputs in one .sum file
-///   stale --name lint 'src/**/*.rs' -- cargo clippy
-///   stale --name test 'tests/**' -- cargo test
-///
-///   # Re-run tests when a specific package version changes
-///   stale -p npm:express 'src/**' -- npm test
-///
-///   # Exit 0 if files are unchanged, 1 if changed (no command needed)
-///   stale 'src/**/*.rs' && echo "nothing changed"
 #[derive(Parser, Debug)]
 #[command(
     name = "stale",
     version,
     about = "Run or skip a command based on file content hashes",
     long_about = None,
+    after_long_help = "\
+EXAMPLES:
+
+  # Re-run cargo test only when .rs files change
+  stale 'src/**/*.rs' -- cargo test
+
+  # Rebuild Docker image only when relevant files change
+  stale Dockerfile 'src/**' -- docker build -t myapp .
+
+  # Use a named entry to track two separate sets of inputs in one .sum file
+  stale --name lint 'src/**/*.rs' -- cargo clippy
+  stale --name test 'tests/**' -- cargo test
+
+  # Re-run tests when a specific package version changes
+  stale -p npm:express 'src/**' -- npm test
+
+  # Exit 0 if files are unchanged, 1 if changed (no command needed)
+  stale 'src/**/*.rs' && echo \"nothing changed\"",
 )]
 struct Cli {
     /// One or more file paths or glob patterns to watch.
