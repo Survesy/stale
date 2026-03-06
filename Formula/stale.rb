@@ -1,28 +1,28 @@
 class Stale < Formula
   desc "CLI tool to run or skip commands based on file content hashes"
   homepage "https://github.com/Survesy/stale"
-  version "0.2.2"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/th1nkful/stale/releases/download/0.2.2/stale-x86_64-apple-darwin.tar.gz"
-      sha256 "577a3389c5c088e72228c7110ca5566976c6f40c2de9ba0b9dc9916704c981f3"
+      url "https://github.com/Survesy/stale/releases/download/0.2.4/stale-x86_64-apple-darwin.tar.gz"
+      sha256 "c6f88d70e1d6591517df90547259e571b2658c7cbcb4dbf721b978e21bfb7839"
     end
     on_arm do
-      url "https://github.com/th1nkful/stale/releases/download/0.2.2/stale-aarch64-apple-darwin.tar.gz"
-      sha256 "3418dbfb35d9a7d0ff93f535e2d40a85ce8afcc201ad405adf8b68dd0ea13af1"
+      url "https://github.com/Survesy/stale/releases/download/0.2.4/stale-aarch64-apple-darwin.tar.gz"
+      sha256 "bff53985e2bdf13bc4eca84c993b6e214c6e68722b1c6e6488fb6b5d800116eb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/th1nkful/stale/releases/download/0.2.2/stale-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "edaf139a1be97682ccb6b95671e508e1b755bdbdb261c363ec9d54921b52f91c"
+      url "https://github.com/Survesy/stale/releases/download/0.2.4/stale-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "aee28ae4edec1d233a1345081a98277cfa0f439eb5b9643ba16ff23029360430"
     end
     on_arm do
-      url "https://github.com/th1nkful/stale/releases/download/0.2.2/stale-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9c01691597c67ff0ac912d35d2a923fcd6f6bc15f10fc0fc154bd51452f2d071"
+      url "https://github.com/Survesy/stale/releases/download/0.2.4/stale-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bdd8f8589baf117fac9c678950f0c1114133f6134abdcbe6a12bb6abf840be2d"
     end
   end
 
